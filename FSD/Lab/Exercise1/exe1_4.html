@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery with Thumbnails</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .gallery a {
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      width: 100px;
+      height: 100px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <h1>Image Gallery with Thumbnails</h1>
+  <div class="gallery">
+    <a href="Images\cat1.jpg" target="_self">
+      <img src="Images\cat1.jpg" alt="Thumnail 1">
+    </a>
+    <a href="Images\cat2.jpg" target="_self">
+      <img src="Images\cat2.jpg" alt="Thumbnail 2">
+    </a>
+    <a href="Images\cat3.jpg" target="_self">
+      <img src="Images\cat3.jpg" alt="Thumbnail 3">
+    </a>
+    <a href="Images\cat4.jpg" target="_self">
+      <img src="Images\cat4.jpg" alt="Thumbnail 4">
+    </a>
+    <a href="Images\cat5.jpg" target="_self">
+      <img src="Images\cat5.jpg" alt="Thumbnail 5">
+    </a>
+  </div>
+</body>
+</html>

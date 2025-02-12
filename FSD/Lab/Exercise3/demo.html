@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic HTML Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 10px 20px;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      background: #005fa3;
+      color: white;
+      padding: 10px 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+    main {
+      display: flex;
+      padding: 20px;
+    }
+    article {
+      flex: 3;
+      margin-right: 20px;
+    }
+    aside {
+      flex: 1;
+      background: #f4f4f4;
+      padding: 10px;
+    }
+    figure {
+      margin: 0;
+      text-align: center;
+    }
+    figure img {
+      max-width: 100%;
+      height: auto;
+    }
+    figcaption {
+      font-style: italic;
+      color: #555;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+  <h1>Welcome to My Website</h1>
+  <p>Designed with HTML5 Semantic Tag</p>
+</header>
+
+<!-- Navigation Section -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#articles">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- Main Content -->
+<main>
+  <!-- Article Section -->
+  <article>
+    <h2 id="articles">Home Section</h2>
+    <p>
+      This is the main content of the homepage, where you can add details about your site.
+    </p>
+
+    <!-- Figure with Caption -->
+    <figure>
+      <img src="Images/html_layout_img.png" alt="HTML Example">
+      <figcaption>Figure 1: A sample HTML layout</figcaption>
+    </figure>
+
+    <section>
+      <h3>Why Use Semantic Tags?</h3>
+      <p>
+        Semantic tags improve accessibility, SEO, and readability of code. Tags like <span style="color: blue;">`<header>`</span> and <span style="color: blue;">`<article>`</span> are more descriptive than generic tags like `<div>`.
+      </p>
+    </section>
+  </article>
+
+  <!-- Aside Section -->
+  <aside>
+    <h3>Quick Links</h3>
+    <ul>
+      <li><a href="#home">Introduction</a></li>
+      <li><a href="#articles">Articles</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <p><b>Tip:</b> Use semantic HTML to make your webpages future-proof and more user-friendly!</p>
+  </aside>
+</main>
+
+<!-- Footer Section -->
+<footer>
+  <p>© 2025 Semantic HTML. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
