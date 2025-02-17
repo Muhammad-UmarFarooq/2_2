@@ -1,11 +1,26 @@
 import pandas as pd
-dict1 = {
-    "name":['harry','rohan','skillf','shubh'],
-    "marks":[92,34,24,17],
-    "city":['rampur','kolkata','bareilly','antarctica']
+data1 = {
+    'Name' :['Ravi','Pope','Teja','Sandeep'],
+    'Pin_no' :[10,20,30,40],
+    'Coding' :['Good','Good','Good','Good'],
+    'College' :['VIT','VIT','VIT','VIT']
 }
+df1=pd.DataFrame(data1)
+df1
 
 
-df=pd.DataFrame(dict1)
 
-  df
+data2 = {
+    'Name' :['Umar','Joel','Vishal','Javed'],
+    'Pin_no' :[50,60,70,80]
+}
+df2=pd.DataFrame(data2)
+df2
+
+combine =pd.concat([df1,df2],ignore_index=True)
+combine
+
+
+ cond= combine[(combine['Pin_no']== 50) & (combine['College'] == 'VIT')]
+cond 
+
