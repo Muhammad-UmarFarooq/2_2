@@ -24,3 +24,16 @@ combine
  cond= combine[(combine['Pin_no']== 50) & (combine['College'] == 'VIT')]
 cond 
 
+import pandas as pd
+data = {
+'Name' : ['Pope','Ravi','Umar'],
+'Age' : [19,None,20 ],
+'City' : ['Gudem','Undi','Bhimavaram'],
+'WardNo' : ['6',None,None] 
+}
+print('Original data frame')
+df4 = pd.DataFrame(data)
+df4
+print('Data frame after filling nan with Missing')
+df_fill = df.fillna('Missing')
+df_fill
