@@ -1,39 +1,29 @@
 import pandas as pd
-data1 = {
-    'Name' :['Ravi','Pope','Teja','Sandeep'],
-    'Pin_no' :[10,20,30,40],
-    'Coding' :['Good','Good','Good','Good'],
-    'College' :['VIT','VIT','VIT','VIT']
-}
-df1=pd.DataFrame(data1)
-df1
-
-
-
-data2 = {
-    'Name' :['Umar','Joel','Vishal','Javed'],
-    'Pin_no' :[50,60,70,80]
-}
-df2=pd.DataFrame(data2)
-df2
-
-combine =pd.concat([df1,df2],ignore_index=True)
-combine
-
-
- cond= combine[(combine['Pin_no']== 50) & (combine['College'] == 'VIT')]
-cond 
+df=pd.read_csv('/content/drive/MyDrive/CSVFiles/day.csv')
+df.head()
 
 import pandas as pd
-data = {
-'Name' : ['Pope','Ravi','Umar'],
-'Age' : [19,None,20 ],
-'City' : ['Gudem','Undi','Bhimavaram'],
-'WardNo' : ['6',None,None] 
-}
-print('Original data frame')
-df4 = pd.DataFrame(data)
-df4
-print('Data frame after filling nan with Missing')
-df_fill = df.fillna('Missing')
-df_fill
+df=pd.read_excel('/content/drive/MyDrive/EXCELFiles/Financial Sample.xlsx')
+df.head()
+
+123
+#Install json if not already installed
+!pip install json
+
+import pandas as pd
+import json
+
+# Open and read the JSON file
+with open('/content/drive/MyDrive/JSONFiles/sample2.json', 'r') as f:
+    data = json.load(f) # use the json library to load the json file instead of read_json
+
+# Normalize the JSON data
+df_normalized = pd.json_normalize(data) # pass the json data to json_normalize directly
+
+df_normalized.head() # Show the flattened DataFrame
+123
+
+import pandas as pd
+df2=pd.read_json('/content/drive/MyDrive/JSONFiles/sample4.json')
+df2.head()
+
